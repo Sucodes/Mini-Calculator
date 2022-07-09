@@ -1,0 +1,60 @@
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(57, 54, 63);
+}
+
+.box {
+  border: none;
+  padding: 1.3rem;
+  border-radius: 3%;
+  box-shadow: 5px 5px 5px rgb(150, 146, 146);
+  background-color: rgb(57, 54, 63);
+}
+.box .box__input--display {
+  height: 20px;
+  padding: 45px 15px;
+  border: none;
+  border-radius: 3%;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  font-size: 15px;
+  text-align: right;
+}
+.box .box__table {
+  font-size: 1rem;
+  border: none;
+  border-radius: 3%;
+  padding: 2px 0px;
+  margin-top: 20px;
+  background-color: rgb(80, 76, 87);
+}
+.box .box__table tbody > tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.box .box__table tbody > tr td {
+  background-color: rgb(57, 54, 63);
+  cursor: pointer;
+  width: 10px;
+  margin: 3px;
+  padding: 15px;
+  border: none;
+  border-radius: 30%;
+}
+.box .box__table tbody > tr td svg {
+  fill: rgb(255, 255, 255);
+}/*# sourceMappingURL=styles.css.map */

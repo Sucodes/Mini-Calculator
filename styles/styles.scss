@@ -1,0 +1,76 @@
+$textColor: rgb(255, 255, 255);
+$lightGray: rgb(80, 76, 87);
+$backgroundColor: rgb(57, 54, 63);
+
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $textColor;
+    @include flexCenter(column);
+
+}
+
+
+h1 {
+    text-align: center;
+    color: $backgroundColor;
+
+}
+
+
+.box {
+    border: none;
+    padding: 1.3rem;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px rgb(150, 146, 146);
+    background-color: $backgroundColor;
+
+    .box__input--display {
+        height: 20px;
+        padding: 45px 15px;
+        border: none;
+        border-radius: 3%;
+        background-color: $textColor;
+        color: #000;
+        font-size: 15px;
+        text-align: right;
+    }
+
+    .box__table {
+        font-size: 1rem;
+        border: none;
+        border-radius: 3%;
+        padding: 2px 0px;
+        margin-top: 20px;
+        background-color: $lightGray;
+
+        tbody > tr {
+            @include flexCenter(row);
+            justify-content: space-around;
+            
+            td {
+                background-color: $backgroundColor;
+                cursor: pointer;
+                width: 10px;
+                margin: 3px;
+                padding: 15px;
+                border: none;
+                border-radius: 30%;
+
+                svg {
+                    fill: $textColor;
+                }
+            }
+        }
+    }
+}
