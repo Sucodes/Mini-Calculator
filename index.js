@@ -31,5 +31,5 @@ function calculate() {
     else {
         displayScreen.textContent += number;
         return; 
-    };
+    }
 };

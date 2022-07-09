@@ -17,14 +17,12 @@ $backgroundColor: rgb(57, 54, 63);
     box-sizing: border-box;
     color: $textColor;
     @include flexCenter(column);
-
 }
 
 
 h1 {
     text-align: center;
     color: $backgroundColor;
-
 }
 
 
@@ -66,10 +64,6 @@ h1 {
                 padding: 15px;
                 border: none;
                 border-radius: 30%;
-
-                svg {
-                    fill: $textColor;
-                }
             }
         }
     }
