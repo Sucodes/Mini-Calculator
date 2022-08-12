@@ -15,9 +15,10 @@ h1 {
 }
 
 .box {
+  width: 188px;
   border: none;
   padding: 1.3rem;
-  border-radius: 3%;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(150, 146, 146);
   background-color: rgb(57, 54, 63);
 }
