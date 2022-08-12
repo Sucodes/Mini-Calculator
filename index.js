@@ -8,18 +8,23 @@ td.forEach(td=> {
     td.addEventListener("click", calculate);
 });
 
+
+// function to delete numbers
+let delButton = document.querySelector(".delete__btn");
+delButton.addEventListener("click", del);
+function del(){
+    result.innerHTML = "";
+    displayScreen.innerText = displayScreen.textContent.slice(0, -2);
+}
+
 // function to evaluate numbers
+
 function calculate() {
     let number = this.innerText;
-
+   
     if (number === "C") {
         displayScreen.innerText = "";
         result.innerText = "";
-        return;
-    }
-
-    else if (number === "&#8634;") {
-        displayScreen.innerText = displayScreen.textContent.substring(0, displayScreen.textContent.length-1);
         return;
     }
 

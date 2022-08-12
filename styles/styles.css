@@ -28,7 +28,7 @@ h1 {
   border-radius: 3%;
   background-color: rgb(255, 255, 255);
   color: #000;
-  font-size: 15px;
+  font-size: 0.9rem;
   text-align: right;
 }
 .box .box__table {
@@ -54,7 +54,4 @@ h1 {
   padding: 15px;
   border: none;
   border-radius: 30%;
-}
-.box .box__table tbody > tr td svg {
-  fill: rgb(255, 255, 255);
 }/*# sourceMappingURL=styles.css.map */
