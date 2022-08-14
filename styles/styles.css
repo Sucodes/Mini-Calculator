@@ -23,14 +23,31 @@ h1 {
   background-color: rgb(57, 54, 63);
 }
 .box .box__input--display {
-  height: 20px;
-  padding: 45px 15px;
+  width: 100%;
+  height: 100px;
   border: none;
   border-radius: 3%;
   background-color: rgb(255, 255, 255);
   color: #000;
   font-size: 0.9rem;
   text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+.box .box__input--display #display {
+  padding: 0px 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+.box .box__input--display #result {
+  padding: 0px 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
 }
 .box .box__table {
   font-size: 1rem;

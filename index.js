@@ -29,10 +29,17 @@ function calculate() {
     }
 
     else if (number === "=") {
-        result.innerText = eval(displayScreen.innerText);
-        return;
+        try {
+            result.innerText = eval(displayScreen.innerText);
+            return;
+        }
+        catch {
+            console.log("Error");
+            displayScreen.innerText = "";
+            result.innerText = "Error";
+        }
     }
-
+        
     else {
         displayScreen.textContent += number;
         return; 
